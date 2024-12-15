@@ -17,7 +17,7 @@ struct AppButtonStyle: ButtonStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .frame(height: 50)
+            .frame(height: 70)
             .frame(maxWidth: .infinity)
             .font(.title2)
             .fontWeight(.semibold)

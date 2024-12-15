@@ -11,7 +11,7 @@ enum GameMode: CaseIterable, Identifiable {
     
     var id: Self {return self}
     
-    case vsHuman, vsCPU, online, newMode
+    case vsHuman, vsCPU, online
     
     var name: String {
         switch self {
@@ -22,8 +22,7 @@ enum GameMode: CaseIterable, Identifiable {
             return AppStrings.vsCpu
         case .online:
             return AppStrings.online
-        case .newMode:
-            return "New Title"
+      
         }
     }
     
@@ -36,8 +35,7 @@ enum GameMode: CaseIterable, Identifiable {
             return Color.red
         case .online:
             return Color.green
-        case .newMode:
-            return Color.blue
+       
         }
     }
     

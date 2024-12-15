@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    //@State private var isPresented = false
+    @State private var gameMode: GameMode?
     
     @ViewBuilder
     private func titleView() -> some View {
@@ -30,7 +32,8 @@ struct HomeView: View {
         VStack(spacing: 15) {
             ForEach(GameMode.allCases, id: \.self) {mode in
                 Button {
-                    
+                   // isPresented = true
+                    self.gameMode = mode
                 } label: {
                     Text(mode.name)
                         
@@ -57,6 +60,10 @@ struct HomeView: View {
     
     var body: some View {
         main()
+            .fullScreenCover(item: $gameMode, content: { mode in
+                GameView(mode: mode)
+            })
+            
     }
 }
 

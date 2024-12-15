@@ -12,5 +12,7 @@ struct AppStrings {
     static let vsHuman = "VS Human"
     static let online = "Online"
     static let appName = "Tic Tac Love"
+    static let exit = "Exit"
+    
     
 }
