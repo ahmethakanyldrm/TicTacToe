@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GameView: View {
+    @Environment(\.dismiss) var dismiss
     
     var mode: GameMode
     
@@ -16,7 +17,7 @@ struct GameView: View {
         HStack {
             Spacer()
             Button {
-                
+                dismiss()
             } label: {
                 Text(AppStrings.exit)
                     .font(.title3)
@@ -36,11 +37,40 @@ struct GameView: View {
     }
     
     @ViewBuilder
+    private func scoreView() -> some View {
+        HStack {
+            Text("Player 1: 0")
+            Spacer()
+            Text("Player 2: 0")
+        }
+        .background(Color.gray)
+        .foregroundStyle(.white)
+        .font(.title2)
+        .fontWeight(.semibold)
+    }
+    
+    @ViewBuilder
+    private func gameStatus() -> some View {
+        VStack {
+            Text("Player 1's move")
+                .font(.title2)
+
+        }
+        .foregroundStyle(.white)
+        .background(Color.pink)
+    }
+    
+    @ViewBuilder
     private func main() -> some View {
         VStack {
             closeButton()
+            scoreView()
             Spacer()
+            gameStatus()
+            Spacer()
+            
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(.horizontal, 16)
         .background(Color.yellow)
 
