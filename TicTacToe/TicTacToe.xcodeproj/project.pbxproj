@@ -17,6 +17,7 @@
 		1C16154C2D0EE2200085790D /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C16154B2D0EE2200085790D /* GameMode.swift */; };
 		1C16154E2D0EE2F40085790D /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C16154D2D0EE2F40085790D /* AppStrings.swift */; };
 		1C1615522D0EE4F30085790D /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1615512D0EE4F30085790D /* AppButtonStyle.swift */; };
+		1C1615542D0EEC730085790D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1615532D0EEC730085790D /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		1C16154B2D0EE2200085790D /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 		1C16154D2D0EE2F40085790D /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		1C1615512D0EE4F30085790D /* AppButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
+		1C1615532D0EEC730085790D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				1C1615202D0EC0800085790D /* TicTacToeApp.swift */,
 				1C1615222D0EC0800085790D /* HomeView.swift */,
+				1C1615532D0EEC730085790D /* GameView.swift */,
 				1C1615502D0EE4DD0085790D /* Styles */,
 				1C16154A2D0EE2040085790D /* Model */,
 				1C16154F2D0EE4BA0085790D /* Utils */,
@@ -294,6 +297,7 @@
 				1C1615212D0EC0800085790D /* TicTacToeApp.swift in Sources */,
 				1C16154E2D0EE2F40085790D /* AppStrings.swift in Sources */,
 				1C16154C2D0EE2200085790D /* GameMode.swift in Sources */,
+				1C1615542D0EEC730085790D /* GameView.swift in Sources */,
 				1C1615522D0EE4F30085790D /* AppButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
