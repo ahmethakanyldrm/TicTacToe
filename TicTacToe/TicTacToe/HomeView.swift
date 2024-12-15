@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  TicTacToe
 //
 //  Created by AHMET HAKAN YILDIRIM on 15.12.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     
     @ViewBuilder
     private func titleView() -> some View {
@@ -28,10 +28,14 @@ struct ContentView: View {
     @ViewBuilder
     private func buttonView() -> some View {
         VStack(spacing: 15) {
-            Button {
-                // func
-            } label: {
-                Text("VS CPU")
+            ForEach(GameMode.allCases, id: \.self) {mode in
+                Button {
+                    
+                } label: {
+                    Text(mode.name)
+                        
+                }
+                .buttonStyle(.appButton(color: mode.color))
             }
         }
         .padding(.horizontal,16)
@@ -57,5 +61,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HomeView()
 }
